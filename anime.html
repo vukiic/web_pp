@@ -1,0 +1,331 @@
+<!-- AI 7/2023 Katarina Vukic AI AI52/2022 Andjela Savic -->
+<!-- Animacija u inženjerstvu -->
+<!-- Predmetni projekat Web Dizajn -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="files/bootstrap-5.3.3/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="files/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Japan x Anime & Manga</title>
+  <link rel="icon" type="image/png" href="images/logo0.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+
+    <a class="navbar1-logo ms-6" href="index.html">
+      <img src="images/logo.png" width="70" height="60" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ps-3">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="meniDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Culture
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="meniDropdown">
+            <li><a class="dropdown-item" href="tradition.html">Tradition</a></li>
+            <li><a class="dropdown-item" href="mythology.html">Mythology</a></li>
+            <li><a class="dropdown-item" href="popculture.html">Pop culture</a></li>
+            <li><a class="dropdown-item active" href="anime.html">Anime/Manga</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="meniDropdown2" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Explore Japan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="meniDropdown2">
+            <li><a class="dropdown-item" href="tourism.html">Tourism</a></li>
+            <li><a class="dropdown-item" href="food.html">Food</a></li>
+            <li><a class="dropdown-item" href="cities.html">Cities</a></li>
+            <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="future.html">Future</a>
+        </li>
+
+      </ul>
+
+      <a href="kontakt.html" class="btn custom-btn ms-auto me-3">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="anime-hero">
+    <img src="images/anime-banner.jpg" alt="Anime & Manga" class="anime-hero-img">
+    <div class="anime-hero-overlay"></div>
+
+    <div class="container anime-hero-content">
+      <h1 class="anime-hero-title">Anime & Manga</h1>
+      <p class="anime-hero-subtitle">
+        Discover the art, storytelling, and creativity behind Japan’s most iconic modern export.
+      </p>
+      <a href="#anime-start" class="btn custom-btn anime-hero-btn">Explore</a>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <main id="anime-start" class="container my-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Stories that travel worldwide</h1>
+        <p>
+          Anime and manga are more than entertainment — they are a major part of Japanese culture and a global creative
+          movement. Through unique visual style, emotional storytelling, and unforgettable characters, anime has shaped
+          modern media across the world.
+        </p>
+        <p>
+          Manga, as a powerful storytelling format, influences everything from animation and cinema to fashion, games,
+          and fan communities. Together, anime and manga represent Japan’s modern imagination.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 3 CARDS -->
+  <section class="container my-5">
+    <h1 class="text-center mb-4">Main sections</h1>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <a href="#anime" class="anime-link-card">
+          <div class="topic-card anime-topic-card">
+            <img src="images/anime-card.jpg" alt="Anime">
+            <div class="topic-overlay">
+              <h3>Anime</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#manga" class="anime-link-card">
+          <div class="topic-card anime-topic-card">
+            <img src="images/manga-card.jpg" alt="Manga">
+            <div class="topic-overlay">
+              <h3>Manga</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#studios" class="anime-link-card">
+          <div class="topic-card anime-topic-card">
+            <img src="images/studio-card.jpg" alt="Studios">
+            <div class="topic-overlay">
+              <h3>Studios</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BIG SECTION 1 -->
+  <section id="anime" class="container my-5 anime-soft-box">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <img src="images/anime.jpg" class="img-fluid anime-big-img" alt="Anime culture">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Anime culture</h1>
+        <p>
+          Anime covers every genre imaginable — from action and fantasy to romance, mystery and sci-fi. It is known for
+          expressive animation, cinematic music, and strong emotional moments that connect deeply with audiences.
+        </p>
+        <p>
+          Many anime series also reflect Japanese society, values, and everyday life, blending real-world themes with
+          creative storytelling.
+        </p>
+
+        <div class="info-sidebar">
+          <h3>Popular genres</h3>
+          <ul class="list">
+            <li>Shōnen (action & adventure)</li>
+            <li>Slice of life</li>
+            <li>Fantasy & isekai</li>
+            <li>Psychological / thriller</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG SECTION 2 -->
+  <section id="manga" class="container my-5 anime-soft-box">
+    <div class="row g-4 align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="images/manga.jpg" class="img-fluid anime-big-img" alt="Manga panels">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Manga world</h1>
+        <p>
+          Manga is Japan’s most influential form of visual storytelling. It ranges from short stories to epic series
+          spanning decades. Manga magazines and volumes are a daily part of reading culture in Japan.
+        </p>
+        <p>
+          Many legendary anime series started as manga first, allowing creators to develop strong plots, character arcs,
+          and unique artistic style.
+        </p>
+
+        <div class="info-sidebar">
+          <h3>Why manga is special</h3>
+          <ul class="list">
+            <li>Strong focus on storytelling</li>
+            <li>Unique art and panel composition</li>
+            <li>Massive variety of themes</li>
+            <li>Global fan communities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG SECTION 3 -->
+  <section id="studios" class="container my-5 anime-soft-box">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <img src="images/studios.jpg" class="img-fluid anime-big-img" alt="Anime studio">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Famous studios</h1>
+        <p>
+          Behind the visuals and storytelling are animation studios that bring manga panels and scripts to life. Many
+          studios became legendary for their signature style, color palettes, and emotional atmosphere.
+        </p>
+        <p>
+          Studios also influence trends in animation techniques and contribute to Japan’s creative industry worldwide.
+        </p>
+
+        <div class="info-sidebar">
+          <h3>Known for style & impact</h3>
+          <ul class="list">
+            <li>Studio Ghibli</li>
+            <li>MAPPA</li>
+            <li>Kyoto Animation</li>
+            <li>Toei Animation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="container my-5">
+    <h1 class="text-center mb-4">Gallery</h1>
+    <p class="text-center" style="color:#3F3A3C;">
+      A glimpse into anime-inspired events and fan culture.
+    </p>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <img src="images/anime-cosplay.jpg" alt="Cosplay" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="images/anime-figures.jpg" alt="Figures" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="images/anime-convention.jpg" alt="Convention" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+    <!-- Kontakt banner -->
+    <section class="contact-banner py-1 text-white">
+      <div class="container text-center">
+        <h2 class="mb-1">Visit us</h2>
+        <div class="contact-info d-flex justify-content-center gap-4 flex-wrap">
+          <span><b>Adress: </b>Trg Dositeja Obradovića 6, 21102 Novi Sad</span>
+          <div><b>Map: </b>
+            <a href="https://www.google.com/maps/place/Fakultet+tehničkih+nauka/@45.2465828,19.8514187,17z" 
+     target="_blank" 
+     class="map-link">
+    <i class="fas fa-map-marker-alt"></i> 
+  </a>
+          </div>
+          <span><b>Phone number: </b>+381 21 450 810</span>
+        </div>
+        <div class="social-icons mt-2">
+          <a href="https://www.instagram.com/ftn_ns/" target="_blank" class="me-3">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/ftn.ns/" target="_blank" class="me-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://www.ftn.uns.ac.rs/" target="_blank">
+            <i class="fas fa-globe fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="footer1 py-3 fixed-bottom">
+        <div class="container text-center">
+          <div class="row g-0">
+            <div class="col-md-12 me-3">
+              <span class="me-2">Contact us:</span>
+            <a href="mailto:katarinavukic776@gmail.com" class="text-white me-3">katarinavukic776@gmail.com</a>
+              <a href="savic.andjela03@gmail.com" class="text-white me-3">savic.andjela03@gmail.com</a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll(".navbar .nav-link");
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute("href");
+            if(linkPage === currentPage){
+                link.classList.add("active");
+            }
+        });
+    });
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
