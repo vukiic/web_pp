@@ -1,0 +1,1021 @@
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  background-color: #FBE4EA;
+  padding-bottom: 55px; 
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #F6C1CC;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-link {
+  color: #3F3A3C;
+  border-bottom: 4px solid transparent;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s ease-in-out;
+  margin-right: 20px;
+  padding: 10px 20px; 
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: #E598A9;
+  color: white;
+}
+
+/* DROPDOWN */
+.navbar-nav .dropdown-menu .dropdown-item {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item.active {
+  background-color: #E598A9;
+  color: #fff;
+}
+
+.navbar-nav .nav-link.dropdown-toggle:focus,
+.navbar-nav .nav-link.dropdown-toggle:active {
+  background-color: transparent;
+  color: #3F3A3C;
+}
+
+
+
+/* BUTTON */
+.custom-btn {
+  background-color: #B48A78;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-btn:hover,
+.custom-btn.active-btn {
+  background-color: #9C6B5A;
+  color: white;
+}
+
+/* HERO */
+.slideshow {
+  position: relative; 
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  z-index: 10;
+  width: 100%;
+}
+
+#featuredCarousel .carousel-item {
+  height: 700px;
+}
+
+#featuredCarousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(45%);
+}
+
+/* HEADINGS & TEXT */
+.container h4,
+.container h1,
+.container h3 {
+  padding: 20px 0px;
+  color: #3F3A3C;
+  text-align: center;
+}
+
+.container p {
+  text-align: justify;
+}
+
+p, ul, ul li {
+  color: #3F3A3C;
+}
+
+/* IMAGES */
+.col-md-4 img,
+.gallery-img,
+.map-image img {
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-4 img:hover,
+.gallery-img:hover,
+.map-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* SIDEBAR */
+.info-sidebar {
+  background-color: #F6C1CC;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* STAR LIST */
+.list li {
+  color: #3F3A3C;
+}
+
+.list li::before {
+  color: #B48A78;
+  font-size: 18px;
+}
+
+/* CONTACT */
+.contact-section {
+  background-color: rgba(246, 193, 204, 0.6);
+  border-radius: 5px;
+  padding: 50px 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.contact-section p,
+.contact-section table td,
+.contact-section b {
+  color: #3F3A3C;
+}
+
+/* CONTACT BANNER */
+.contact-banner {
+  background-color: #F6C1CC;
+  padding-bottom: 10px;
+}
+
+.contact-banner a.map-link,
+.contact-banner .social-icons a {
+  color: #3F3A3C;
+}
+
+.contact-banner a.map-link:hover i,
+.contact-banner .social-icons a:hover {
+  color: #B48A78;
+  transform: scale(1.4);
+}
+
+/* FOOTER */
+.footer1 {
+  background-color: #E598A9;
+  text-align: center;
+}
+
+.footer1 span,
+.footer1 a {
+  color: white;
+}
+
+/* =========================
+   EXPLORE JAPAN – PREVIEW
+   ========================= */
+
+#topicsCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#topicsCarousel h2 {
+  color: #3F3A3C;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* CARD */
+.topic-card {
+  position: relative;
+  height: 240px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* IMAGE */
+.topic-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* OVERLAY (Sakura gradient) */
+.topic-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(246, 193, 204, 0.2),
+    rgba(229, 152, 169, 0.85)
+  );
+  transition: opacity 0.4s ease;
+}
+
+/* TEXT */
+.topic-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.topic-overlay h3 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* HOVER EFFECTS */
+.topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.topic-card:hover img {
+  transform: scale(1.12);
+}
+
+.topic-card:hover::after {
+  opacity: 1;
+}
+
+
+/* =========================
+   JAPAN HISTORY – ALIGN FIX
+   ========================= */
+
+.visual-column {
+  display: flex;
+  align-items: flex-start;
+}
+
+.visual-img {
+  margin-top: 9px;
+}
+
+.col-md-8 h3 {
+  margin-top: 0;
+}
+
+
+/* =========================
+   TOURISM IMAGE SECTION
+   ========================= */
+
+.tourism-gallery {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+  margin: 60px 0;
+}
+
+/* IMAGE WRAPPER */
+.tourism-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* IMAGES */
+.tourism-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+/* LEFT IMAGE – POSTER STYLE */
+.tourism-img.large {
+  min-height: 420px;
+}
+
+/* RIGHT IMAGES */
+.tourism-img.small {
+  min-height: 200px;
+}
+
+/* HOVER EFFECT */
+.tourism-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.tourism-img:hover img {
+  transform: scale(1.08);
+}
+
+/* OPTIONAL OVERLAY (soft sakura tone) */
+.tourism-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05),
+    rgba(229, 152, 169, 0.25)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tourism-img:hover::after {
+  opacity: 1;
+}
+
+
+/* =========================
+   GALLERY IMAGES – TOURIST
+   ========================= */
+
+.gallery-img {
+  width: 100%;
+  height: 260px;                 /* sve slike iste visine */
+  object-fit: cover;             /* zadržava proporcije */
+  border-radius: 16px;
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.gallery-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 20px 35px rgba(229, 152, 169, 0.35); /* sakura senka */
+}
+
+/* =========================
+   MYTHOLOGY – EXTRA STYLE
+   ========================= */
+
+.myth-link-card{
+  text-decoration: none;
+}
+
+.myth-box{
+  background-color: rgba(246, 193, 204, 0.35);
+  border-radius: 14px;
+  padding: 35px 25px;
+}
+
+/* mini cards */
+.myth-mini-card{
+  background-color: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%;
+}
+
+.myth-mini-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.myth-mini-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.myth-mini-card.small img{
+  height: 170px;
+}
+
+.myth-mini-body{
+  padding: 15px 15px 20px 15px;
+}
+
+.myth-mini-body h3{
+  padding: 10px 0;
+  margin: 0;
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+.myth-mini-body p{
+  margin: 0;
+  text-align: justify;
+}
+
+/* Legend image */
+.myth-legend-img{
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myth-legend-img:hover{
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Mythology carousel brightness */
+#mythCarousel .carousel-item img{
+  filter: brightness(45%);
+  height: 700px;
+  object-fit: cover;
+}
+
+/* =========================
+   MYTHOLOGY – HERO BANNER
+   ========================= */
+
+.myth-hero-banner{
+  position: relative;
+  height: 360px;                 /* manja hero visina */
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.myth-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.myth-hero-text{
+  position: relative;
+  z-index: 2;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myth-hero-text h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  margin: 0;
+}
+
+.myth-hero-text p{
+  color: white;
+  max-width: 850px;
+  margin-top: 12px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.myth-hero-btn{
+  margin-top: 15px;
+}
+
+/* =========================
+   MYTHOLOGY – FIX CARDS SIZE
+   ========================= */
+
+/* da link ne menja layout */
+.myth-link-card{
+  display: block;
+  text-decoration: none;
+}
+
+/* zaključavanje dimenzija za "Kami / Yokai / Legends" */
+.myth-link-card .topic-card{
+  height: 240px;          /* isto kao u tvom CSS-u */
+}
+
+/* svaka slika bude ista i ne deformiše se */
+.myth-link-card .topic-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   TRADITION PAGE – STYLE
+   ========================= */
+
+.trad-hero{
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.trad-hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(70%);
+}
+
+.trad-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.15),
+    rgba(229, 152, 169, 0.35)
+  );
+}
+
+.trad-hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.trad-hero-title{
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.trad-hero-subtitle{
+  color: white;
+  max-width: 850px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.trad-hero-btn{
+  margin-top: 15px;
+}
+
+/* da topic-card link ne menja stil */
+.trad-link-card{
+  text-decoration: none;
+  display: block;
+}
+
+/* soft box kao elegantna sekcija (nije isto kao mythology) */
+.trad-soft-box{
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* veće slike u sekcijama */
+.trad-big-img{
+  border-radius: 16px;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.trad-hero-content h1,
+.trad-hero-content p{
+  color: white !important;
+}
+
+.trad-hero-content h1,
+.trad-hero-content p{
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* =========================
+   POP CULTURE PAGE – STYLE
+   ========================= */
+
+.pop-hero{
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.pop-hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(65%);
+}
+
+.pop-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.20),
+    rgba(88, 55, 130, 0.25),
+    rgba(229, 152, 169, 0.35)
+  );
+}
+
+.pop-hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.pop-hero-title{
+  color: white !important;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.pop-hero-subtitle{
+  color: white !important;
+  max-width: 900px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.pop-hero-btn{
+  margin-top: 15px;
+}
+
+.pop-link-card{
+  text-decoration: none;
+  display: block;
+}
+
+/* soft box - moderniji */
+.pop-soft-box{
+  background: rgba(255,255,255,0.60);
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* big images */
+.pop-big-img{
+  border-radius: 16px;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* =========================
+   HISTORY IMAGE GALLERIES
+   ========================= */
+
+.history-gallery {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.history-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.history-gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   ANIME/MANGA PAGE – STYLE
+   ========================= */
+
+.anime-hero{
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.anime-hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(70%);
+}
+
+.anime-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.20),
+    rgba(120, 70, 180, 0.25),
+    rgba(229, 152, 169, 0.35)
+  );
+}
+
+.anime-hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.anime-hero-title{
+  color: white !important;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.anime-hero-subtitle{
+  color: white !important;
+  max-width: 900px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.anime-hero-btn{
+  margin-top: 15px;
+}
+
+.anime-link-card{
+  text-decoration: none;
+  display: block;
+}
+
+.anime-soft-box{
+  background: rgba(255,255,255,0.60);
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.anime-big-img{
+  border-radius: 16px;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* =========================
+   FUTURE PAGE
+   ========================= */
+
+/* HERO SECTION */
+.future-hero {
+  position: relative;
+  height: 80vh;
+  background: url("../images/future1.jpg") center / cover no-repeat;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+/* DARK OVERLAY – ISPOD TEKSTA */
+.future-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20, 15, 40, 0.55),
+    rgba(10, 8, 25, 0.85)
+  );
+  z-index: 1;
+}
+
+/* HERO TEXT */
+.future-hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.future-hero-overlay h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow:
+    0 4px 15px rgba(0,0,0,0.7),
+    0 0 30px rgba(180,140,255,0.35);
+}
+
+.future-hero-overlay p {
+  font-size: 1.3rem;
+  max-width: 750px;
+  line-height: 1.6;
+  color: #f2f2f2;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+/* INTRO BLOCK */
+.future-intro-block {
+  max-width: 900px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+}
+
+.future-intro-block p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #eaeaea; /* vrlo svetlo siva */
+  margin-bottom: 15px;
+}
+
+/* GRID SECTION */
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-bottom: 70px;
+}
+
+/* GRID IMAGES */
+.future-img {
+  height: 260px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.future-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.future-img:hover img {
+  transform: scale(1.1);
+}
+
+/* GRID TEXT */
+.future-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.future-text h3 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.future-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6e6e6;
+}
+
+/* FEATURE CARD */
+.future-card {
+  position: relative;
+  height: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 22px 45px rgba(0,0,0,0.35);
+  margin-bottom: 70px;
+}
+
+.future-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.future-card:hover img {
+  transform: scale(1.1);
+}
+
+.future-card-text {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20, 15, 40, 0.3),
+    rgba(10, 8, 25, 0.85)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+}
+
+.future-card-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.future-card-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #ffffff;  /* text sustainability */
+}
+
+/* TEXT ONLY SECTION */
+.future-text-only {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+}
+
+.future-text-only h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #2E2E2E;
+}
+
+.future-grid .future-text h3,
+.future-grid .future-text p {
+  color: #000;  /* techno */
+}
+
+
+
+.future-card-text h3, 
+.future-card-text p {
+  color: #ffffff;      /* naslov sustainability */
+}
+
+
+
+.future-text-only p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #3A3A3A;
+}
+
+/* GALLERY */
+.future-gallery img {
+  border-radius: 14px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.future-gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.popup-img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.popup-img:hover {
+  transform: scale(1.03);
+}
