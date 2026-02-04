@@ -1,0 +1,323 @@
+<!-- AI 7/2023 Katarina Vukic AI AI52/2022 Andjela Savic -->
+<!-- Animacija u inženjerstvu -->
+<!-- Predmetni projekat Web Dizajn -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="files/bootstrap-5.3.3/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="files/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Japan x Mythology</title>
+  <link rel="icon" type="image/png" href="images/logo0.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+
+    <a class="navbar1-logo ms-6" href="index.html">
+      <img src="images/logo.png" width="70" height="60" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ps-3">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="meniDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Culture
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="meniDropdown">
+            <li><a class="dropdown-item" href="tradition.html">Tradition</a></li>
+            <li><a class="dropdown-item active" href="mythology.html">Mythology</a></li>
+            <li><a class="dropdown-item" href="popculture.html">Pop culture</a></li>
+            <li><a class="dropdown-item" href="anime.html">Anime/Manga</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="meniDropdown2" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Explore Japan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="meniDropdown2">
+            <li><a class="dropdown-item" href="tourism.html">Tourism</a></li>
+            <li><a class="dropdown-item" href="food.html">Food</a></li>
+            <li><a class="dropdown-item" href="cities.html">Cities</a></li>
+            <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="future.html">Future</a>
+        </li>
+      </ul>
+
+      <a href="kontakt.html" class="btn custom-btn ms-auto me-3">Contact</a>
+    </div>
+  </nav>
+
+<!-- HERO BANNER (bez slideshow-a) -->
+<header class="myth-hero-banner">
+  <div class="myth-hero-overlay"></div>
+
+  <div class="container myth-hero-text">
+    <h1>Japanese Mythology</h1>
+    <p>
+      Discover kami, yōkai creatures and legends that shaped Japan through centuries.
+    </p>
+    <a href="#explore" class="btn custom-btn myth-hero-btn">Explore</a>
+  </div>
+</header>
+
+  <!-- INTRO -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Spirits, legends and ancient worlds</h1>
+        <p>
+          Japanese mythology is a world where gods walk through nature and spirits live in forests, mountains and rivers.
+          These stories are deeply connected to Shinto beliefs, where kami represent the hidden energy of the world.
+        </p>
+        <p>
+          Alongside the kami, folklore brings mysterious yōkai — creatures that can be playful, dangerous, or protective.
+          These myths shaped Japanese culture, rituals, festivals and even modern media.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAIN SECTIONS (ISTI FAZON KAO PREVIEW) -->
+  <section id="explore" class="container my-5">
+    <h1 class="text-center mb-4">Explore Mythology</h1>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="#kami" class="myth-link-card">
+          <div class="topic-card">
+            <img src="images/kami.jpg" alt="Kami">
+            <div class="topic-overlay">
+              <h3>Kami</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#yokai" class="myth-link-card">
+          <div class="topic-card">
+            <img src="images/yokai.jpg" alt="Yokai">
+            <div class="topic-overlay">
+              <h3>Yōkai</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#legends" class="myth-link-card">
+          <div class="topic-card">
+            <img src="images/legends.png" alt="Legends">
+            <div class="topic-overlay">
+              <h3>Legends</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KAMI -->
+  <section id="kami" class="container my-5 myth-box">
+    <h1 class="text-center mb-4">Famous Kami</h1>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="myth-mini-card">
+          <img src="images/amaterasu.jpg" alt="Amaterasu">
+          <div class="myth-mini-body">
+            <h3>Amaterasu</h3>
+            <p>The Sun Goddess, embodies light, life, and divine order. Her presence brings warmth, harmony, and renewal to the world, illuminating both the heavens and the hearts of mortals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="myth-mini-card">
+          <img src="images/susanoo.jpg" alt="Susanoo">
+          <div class="myth-mini-body">
+            <h3>Susanoo</h3>
+            <p>The Storm God, a force of chaos and raw power. Fierce and unpredictable, he commands wind and thunder, embodying destruction, rebellion, and untamed strength.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="myth-mini-card">
+          <img src="images/tsukuyomi.png" alt="Tsukuyomi">
+          <div class="myth-mini-body">
+            <h3>Tsukuyomi</h3>
+            <p>The Moon God, represents mystery, silence, and the cold beauty of the night. Calm and distant, he rules over shadows, dreams, and the passage of time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOKAI -->
+  <section id="yokai" class="container my-5 myth-box">
+    <h1 class="text-center mb-4">Yōkai creatures</h1>
+
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="myth-mini-card small">
+          <img src="images/kitsune.jpg" alt="Kitsune">
+          <div class="myth-mini-body">
+            <h3>Kitsune</h3>
+            <p>Mystical fox spirits known for their intelligence and shapeshifting abilities. Playful yet dangerous, they blur the line between illusion and reality, often acting as tricksters or guardians.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="myth-mini-card small">
+          <img src="images/tengu.jpg" alt="Tengu">
+          <div class="myth-mini-body">
+            <h3>Tengu</h3>
+            <p>Proud and fearsome mountain spirits, masters of martial skill and the wind. Often seen as warriors or guardians, they punish arrogance and protect sacred places.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="myth-mini-card small">
+          <img src="images/oni.png" alt="Oni">
+          <div class="myth-mini-body">
+            <h3>Oni</h3>
+            <p>Powerful demons symbolizing wrath, strength, and fear. With monstrous forms and immense power, they embody humanity’s darkest impulses and unstoppable rage.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="myth-mini-card small">
+          <img src="images/yuki-onna.jpg" alt="Yuki-onna">
+          <div class="myth-mini-body">
+            <h3>Yuki-onna</h3>
+            <p>The Snow Woman and a haunting spirit born from winter storms. Beautiful and deadly, she drifts through frozen landscapes, bringing silence, sorrow, and eternal cold.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGENDS -->
+  <section id="legends" class="container my-5 myth-box">
+    <h1 class="text-center mb-4">Legend spotlight</h1>
+
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <div class="info-sidebar">
+          <h3>Amaterasu and the cave</h3>
+          <p>
+            When Amaterasu hid herself in a cave, the world was plunged into darkness. Only when the other kami lured her out through dance, ritual, and radiant light was balance restored to the world.
+          </p>
+          <p>Symbolism</p>
+          <ul class="list">
+            <li>Light and hope</li>
+            <li>Balance and harmony</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="images/legend.jpg" class="img-fluid myth-legend-img" alt="Legend image">
+      </div>
+    </div>
+  </section>
+
+    <!-- Kontakt banner -->
+    <section class="contact-banner py-1 text-white">
+      <div class="container text-center">
+        <h2 class="mb-1">Visit us</h2>
+        <div class="contact-info d-flex justify-content-center gap-4 flex-wrap">
+          <span><b>Adress: </b>Trg Dositeja Obradovića 6, 21102 Novi Sad</span>
+          <div><b>Map: </b>
+            <a href="https://www.google.com/maps/place/Fakultet+tehničkih+nauka/@45.2465828,19.8514187,17z" 
+     target="_blank" 
+     class="map-link">
+    <i class="fas fa-map-marker-alt"></i> 
+  </a>
+          </div>
+          <span><b>Phone number: </b>+381 21 450 810</span>
+        </div>
+        <div class="social-icons mt-2">
+          <a href="https://www.instagram.com/ftn_ns/" target="_blank" class="me-3">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/ftn.ns/" target="_blank" class="me-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://www.ftn.uns.ac.rs/" target="_blank">
+            <i class="fas fa-globe fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+
+    <footer class="footer1 py-3 fixed-bottom">
+        <div class="container text-center">
+          <div class="row g-0">
+            <div class="col-md-12 me-3">
+              <span class="me-2">Contact us:</span>
+            <a href="mailto:katarinavukic776@gmail.com" class="text-white me-3">katarinavukic776@gmail.com</a>
+              <a href="savic.andjela03@gmail.com" class="text-white me-3">savic.andjela03@gmail.com</a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll(".navbar .nav-link");
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute("href");
+            if(linkPage === currentPage){
+                link.classList.add("active");
+            }
+        });
+    });
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
